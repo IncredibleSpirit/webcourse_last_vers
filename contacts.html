@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="siteborder">
+    <div class="contentontop">
+    <header class="header">
+    <a class="logo" href="index.html">
+        <img src="Img/logo.svg" alt="logotype">
+    </a>
+    <nav>
+      <ul class="menu">
+          <li class="menu__list"><a class="menu__link" href="index.html">Главная</a></li>
+          <li class="menu__list"><a class="menu__link " href="students.html">Студенты</a></li>
+          <li class="menu__list"><a class="menu__link" href="about.html">О курсе</a></li>
+          <li class="menu__list"><a class="menu__link menu__link_active" href="contacts.html">Контакты</a></li>
+      </ul>
+
+   </nav>
+    <a class="button" href="#">Войти</a>
+    </header>
+ <main class="map">
+    <h2 class="text__contacts">Как нас найти &#128506;</h2>
+    <iframe class="mappic" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111813.17269468911!2d30.218847188509635!3d59.93577073028291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sru!4v1677254797149!5m2!1sru!2sru" width="1268" height="370" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p class="head_under_map">Наши контакты</p>
+    <p class="adress">Адрес: г. Санкт-Петербург, Дворцовая пл., 2, 190000</p>
+     <a class="tel" href="tel:+78125555555">Тел: +7 (812) 555-55-55</a>
+ </main>
+    </div>
+ <footer class="footer">
+    <p class="footer__text">2023 &copy; <a class="footer__text link__footer" href="#">учебный центр</a></p>
+ </footer>
+</div>
+<div class="popup">
+   <p class="entertext">Войти на сайт</p>
+   <input class="input text_input" type="text" placeholder="Логин">
+   <input class="input password_input" type="password" placeholder="Пароль">
+   <a class="button_2" href="#">Войти</a>
+</div>
+<script>
+   const buttonElement = document.querySelector('.button');
+   const blockElement = document.querySelector('.popup');
+   buttonElement.addEventListener('click', function (e) {
+       blockElement.classList.toggle('visible')
+   });
+</script>
+</body> 
+</html>
